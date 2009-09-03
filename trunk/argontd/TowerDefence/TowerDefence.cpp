@@ -128,7 +128,7 @@ Ogre::String bundlePath()
 		 */
 		const int maxconnections = 32;
 		const int sleeptime = 30;
-		RakPeerInterface::Startup( maxconnections, sleeptime, SocketDescriptor *socketDescriptors, unsigned socketDescriptorCount )
+		//RakPeerInterface::Startup( maxconnections, sleeptime, SocketDescriptor *socketDescriptors, unsigned socketDescriptorCount )
 
 		return true;
 	}
