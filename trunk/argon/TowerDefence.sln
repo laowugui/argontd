@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual C++ Express 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TowerDefence", "TowerDefence\TowerDefence.vcproj", "{6223FA5F-C069-4852-8596-7B9920EE7756}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TowerDefenceMatchMaking", "TowerDefenceMatchMaking\TowerDefenceMatchMaking.vcproj", "{A168177D-A99B-440E-B90D-A41727AB8377}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{6223FA5F-C069-4852-8596-7B9920EE7756}.Debug|Win32.Build.0 = Debug|Win32
 		{6223FA5F-C069-4852-8596-7B9920EE7756}.Release|Win32.ActiveCfg = Release|Win32
 		{6223FA5F-C069-4852-8596-7B9920EE7756}.Release|Win32.Build.0 = Release|Win32
+		{A168177D-A99B-440E-B90D-A41727AB8377}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A168177D-A99B-440E-B90D-A41727AB8377}.Debug|Win32.Build.0 = Debug|Win32
+		{A168177D-A99B-440E-B90D-A41727AB8377}.Release|Win32.ActiveCfg = Release|Win32
+		{A168177D-A99B-440E-B90D-A41727AB8377}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

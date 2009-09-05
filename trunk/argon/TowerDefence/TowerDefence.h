@@ -4,7 +4,9 @@
 #include "OgreConfigFile.h"
 #include "OgreStringConverter.h"
 #include "OgreException.h"
+#include "RakPeerInterface.h"
 #include "Window.h"
+
 
 class Main {
 
@@ -53,6 +55,9 @@ protected:
 	Ogre::RenderWindow * mRenderWindow;
 
 	Window * mWindow;
+
+	RakPeerInterface * mPeer;
+
 };
 
 /**

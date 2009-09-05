@@ -3,6 +3,9 @@
 
 #include "DefaultFrameListener.h"
 
+#include "RakNetworkFactory.h"
+
+
 /**********************************************************************
 OS X Specific Resource Location Finding
 **********************************************************************/
@@ -30,7 +33,8 @@ Ogre::String bundlePath()
 
 #endif
 
-	Main::Main()
+Main::Main():
+	mPeer(0)
 	{
 		#if OGRE_PLATFORM == OGRE_PLATFORM_APPLE
 			Ogre::String mResourcePath;
@@ -45,8 +49,14 @@ Ogre::String bundlePath()
 //----------------------------------------------//
 
 	Main::~Main(){
+
 		delete mRoot;
 		mRoot = 0;
+
+		if (mPeer != 0){
+			RakNetworkFactory::DestroyRakPeerInterface(mPeer);
+			mPeer = 0;
+		}
 	}
 
 //----------------------------------------------//
@@ -129,6 +139,8 @@ Ogre::String bundlePath()
 		const int maxconnections = 32;
 		const int sleeptime = 30;
 		//RakPeerInterface::Startup( maxconnections, sleeptime, SocketDescriptor *socketDescriptors, unsigned socketDescriptorCount )
+
+		mPeer = RakNetworkFactory::GetRakPeerInterface();
 
 		return true;
 	}
